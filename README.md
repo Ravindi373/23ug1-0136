@@ -94,5 +94,5 @@ Each time the page is refreshed, the visit counter increments, confirming that d
 
 
 ## Author
-Ravindi Ayodhya
+Ravindi Ayodhya - 
 Built as part of the CCS3308 coursework, demonstrating Docker containerization, multi-service orchestration with Docker Compose, and persistent data storage.
