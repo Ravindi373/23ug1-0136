@@ -98,8 +98,6 @@ http://localhost:5000
 
 Each time the page is refreshed, the visit counter increments, confirming that data is being written to and read from the persistent MySQL volume.
 
----
-
 ## Author
 Ravindi Ayodhya
 Built as part of the CCS3308 coursework, demonstrating Docker containerization, multi-service orchestration with Docker Compose, and persistent data storage.
