@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 flask==3.0.3
 mysql-connector-python==8.4.0
+=======
+flask
+mysql-connector-python
+>>>>>>> 3128f28929f2f1aa6f8513f75c59d9744521211b
