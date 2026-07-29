@@ -4,8 +4,6 @@ A containerized web application built with **Flask** and **MySQL**, orchestrated
 
 **🔗 Live Demo:** [mysql-docker-flask-production.up.railway.app](https://mysql-docker-flask-production.up.railway.app)
 
----
-
 ## Tech Stack
 
 * **Docker** – Runs the application inside isolated containers.
@@ -13,8 +11,6 @@ A containerized web application built with **Flask** and **MySQL**, orchestrated
 * **Python & Flask** – Backend web framework serving the application.
 * **MySQL 8.0** – Relational database used to store and persist visit records.
 * **Railway** – Cloud platform used for live deployment of both the app and the database.
-
----
 
 ## Application Description
 
@@ -25,14 +21,10 @@ The application is a small Flask web service that connects to a MySQL database. 
 3. Inserts a new visit record.
 4. Returns the total number of visits recorded so far, rendered on a styled HTML page.
 
----
-
 ## Network and Volume Details (Local / Docker Compose)
 
 * **Networks**: An external Docker network (`app-net`) is created so the `web` and `db` containers can communicate with each other securely.
 * **Volumes**: A named external volume (`db-data`) is used to persist MySQL data, ensuring data is not lost when containers stop or are removed.
-
----
 
 ## Container Configuration
 
@@ -41,14 +33,10 @@ The application is a small Flask web service that connects to a MySQL database. 
 * Both services are connected to the same Docker network (`app-net`) for internal communication.
 * Database credentials are supplied via environment variables (see **Environment Setup** below) rather than hardcoded in the compose file.
 
----
-
 ## Container List
 
 1. **Web Container** – Runs the Flask application, listens on port `5000`.
 2. **DB Container** – Runs MySQL 8.0, stores application data persistently via the `db-data` volume.
-
----
 
 ## Project Structure
 
@@ -65,8 +53,6 @@ mysql-docker-flask/
 ├── .env.example
 └── README.md
 ```
-
----
 
 ## Environment Setup
 
@@ -85,8 +71,6 @@ MYSQL_ROOT_PASSWORD=example
 ```
 
 > **Note:** The `.env` file is excluded from version control via `.gitignore` and should never be committed with real credentials.
-
----
 
 ## Steps to Run Locally
 
@@ -112,15 +96,11 @@ http://localhost:5000
 
 Each time the page is refreshed, the visit counter increments, confirming that data is being written to and read from the persistent MySQL volume.
 
----
-
 ## Live Deployment
 
 This app is also deployed on **Railway**, with both the Flask web service and a managed MySQL database running as separate services within the same project, connected over Railway's internal networking. Environment variables (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`) are securely injected via Railway's variable references, and the service is exposed on a public Railway-provided domain with automatic SSL.
 
 **Live URL:** [https://mysql-docker-flask-production.up.railway.app](https://mysql-docker-flask-production.up.railway.app)
-
----
 
 ## Author
 Ravindi Ayodhya - 
