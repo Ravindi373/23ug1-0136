@@ -1,8 +1,6 @@
 # Dockerized Flask & MySQL Web App
 
-A containerized web application built with **Flask** and **MySQL**, orchestrated using **Docker Compose**, and deployed live on **Railway**. The app connects to a MySQL database, logs each visit, and displays a running visit counter — demonstrating multi-container orchestration, persistent storage, and container networking with Docker.
-
-**🔗 Live Demo:** [mysql-docker-flask-production.up.railway.app](https://mysql-docker-flask-production.up.railway.app)
+A containerized web application built with **Flask** and **MySQL**, orchestrated using **Docker Compose**, and deployed live on **Railway**. The app connects to a MySQL database, logs each visit, and displays a running visit counter, demonstrating multi-container orchestration, persistent storage, and container networking with Docker.
 
 ## Tech Stack
 
