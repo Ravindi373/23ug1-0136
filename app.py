@@ -1,3 +1,4 @@
+# v2 - styled homepage
 from flask import Flask
 import os, time
 import mysql.connector
